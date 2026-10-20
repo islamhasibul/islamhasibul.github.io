@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md. Hasibul Islam</title>
+  <meta name="description" content="Md. Hasibul Islam — CSE undergraduate at AIUB and prospective PhD applicant (Fall 2027) in Human-Computer Interaction, Human-Centered AI and Computer Vision.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#about" class="nav-name">Md. Hasibul Islam</a>
+      <nav class="nav-links">
+        <a href="#about">About Me</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Academic Projects</a>
+        <a href="assets/cv.pdf" target="_blank" rel="noopener" class="nav-cv">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- About Me -->
+    <section id="about" class="hero">
+      <div class="hero-text">
+        <h1>Md. Hasibul Islam</h1>
+        <p class="subtitle">Prospective PhD Applicant (Fall 2027)</p>
+        <p>
+          I am a final-year B.Sc. student in Computer Science &amp; Engineering at
+          <a href="https://www.aiub.edu" target="_blank" rel="noopener">American International University-Bangladesh (AIUB)</a>
+          (CGPA 3.75/4.00), and I worked as a Research Assistant at Arche Intelligence Lab from June 2025 to August 2026.
+        </p>
+        <p>
+          My work spans two areas. In human-computer interaction, I study how interactive systems
+          can stay useful in the environments people actually live in: for example, a portable air-quality
+          monitor that alerts only on meaningful pollution spikes, so that people in a city
+          like Dhaka do not tune its warnings out. In medical imaging, I work on making deep learning models
+          more reliable for under-represented cases and more honest about how well they generalize.
+          The question running through both is how to build AI and interactive systems that people can
+          trust and act on.
+        </p>
+        <div class="interests">
+          <h3>Research Interests</h3>
+          <ul class="tags">
+            <li>Human-Computer Interaction (HCI)</li>
+            <li>Human-Centered AI</li>
+            <li>Responsible AI</li>
+            <li>Explainable AI</li>
+            <li>Social Computing</li>
+            <li>Computer Vision</li>
+            <li>Medical Imaging</li>
+            <li>Deep Learning</li>
+          </ul>
+        </div>
+        <div class="quick-links">
+          <a href="mailto:hasibulislam5464@gmail.com">Email</a>
+          <a href="https://github.com/hasibul-shant0" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/md-hasibul-islam-9414362b7/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://orcid.org/0009-0004-7864-1657" target="_blank" rel="noopener">ORCID</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/profile-web.jpg" alt="Portrait of Md. Hasibul Islam" width="640" height="822">
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Research / Publications -->
+    <section id="research">
+      <h2>Research</h2>
+
+      <article class="paper paper-media">
+        <a href="assets/hci.jpg" target="_blank" rel="noopener" class="paper-thumb">
+          <img src="assets/hci-web.jpg" alt="Md. Hasibul Islam presenting the Notification Fatigue poster" loading="lazy">
+        </a>
+        <div class="paper-body">
+          <h3>Reducing Notification Fatigue using a Portable Adaptive-Baseline PM2.5 Monitor for Persistently Polluted Cities</h3>
+          <p class="authors">Shamvi Md Abdullah, Fahim Abrar, Hamim Bhuiyan, <strong>Md. Hasibul Islam</strong></p>
+          <p class="venue"><span class="badge">Preprint</span> Submitted to the 29th International Conference on Computer and Information Technology (ICCIT 2026)</p>
+          <p class="summary">
+            A portable ESP32-C3 PM2.5 monitor that alerts only on statistically significant spikes above
+            a sliding personal baseline instead of a fixed threshold. In a two-week field study in Dhaka, this cut
+            alerts from dozens per day to a few, and the alerts that remained were far more meaningful.
+          </p>
+          <div class="pills">
+            <a href="assets/notification-fatigue.pdf" target="_blank" rel="noopener">Paper</a>
+            <a href="assets/hciPoster.jpg" target="_blank" rel="noopener">Poster</a>
+            <a href="assets/hci.jpg" target="_blank" rel="noopener">Photo</a>
+          </div>
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              Air pollution is a serious concern, particularly in cities like Dhaka where the air is almost never clean.
+              Monitors with a fixed limit send too many alerts and users stop paying attention, which defeats the purpose.
+              A portable system was built with an ESP32-C3, a PMS7003 and a BME280, soldered onto a perfboard and powered
+              by one 18650 battery. The firmware keeps a sliding history of recent PM2.5 readings and only alerts on a
+              statistically significant spike above the baseline. Alerts go to a smartphone over Bluetooth Low Energy.
+              A React Native app and a Firebase backend were made to show live data and log spike events. One of the
+              authors carried the device for two weeks in Dhaka, the first week in fixed-threshold mode and the second in
+              spike-detection mode. The fixed-threshold mode produced dozens of alerts per day while spike-based mode only
+              generated a few. The spike alerts were found to be considerably more meaningful, suggesting adaptive alerting
+              can reduce alert desensitisation even in a heavily polluted city.
+            </p>
+          </details>
+          <a href="assets/hciPoster.jpg" target="_blank" rel="noopener" class="poster-preview">
+            <img src="assets/hciPoster-web.jpg" alt="Research poster: Reducing Notification Fatigue using a Portable Adaptive-Baseline PM2.5 Monitor" loading="lazy">
+            <span>Poster (click for full resolution)</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="paper">
+        <h3>MIME: Multi-Strategy Imbalance Mitigation Engine for Skin Cancer Classification</h3>
+        <p class="authors">Md. Nasif Safwan, Souhardo Rahman, Md. Abdulla Al Hasib, <strong>Md. Hasibul Islam</strong>, Mahamodul Hasan Mahadi, Mohammad Nasir Uddin</p>
+        <p class="venue"><span class="badge badge-pub">Conference</span> 7th International Conference on Trends in Computational and Cognitive Engineering (TCCE 2025), Universiti Teknikal Malaysia Melaka, 12–13 November 2025</p>
+        <p class="summary">
+          A unified framework comparing sampling, loss re-weighting and DC-GAN augmentation for class imbalance on ISIC 2019,
+          built on an EfficientNetV2-S backbone. Generative augmentation raised macro-F1 from 60.42% to 82.84% and
+          squamous cell carcinoma F1 from 11.89% to 53.18%.
+        </p>
+        <div class="pills">
+          <a href="assets/tcce-mime.pdf" target="_blank" rel="noopener">Paper</a>
+          <a href="assets/tcce-certificate.pdf" target="_blank" rel="noopener">Certificate</a>
+        </div>
+        <details>
+          <summary>Abstract</summary>
+          <p>
+            Severe class imbalance is a major obstacle in automated skin lesion diagnosis, where minority classes such as
+            squamous cell carcinoma are often underdetected. We propose MIME, a unified framework that evaluates three
+            complementary strategies: sampling to rebalance the training pool, loss functions to adjust learning priorities,
+            and DC-GAN augmentation to enrich minority cases. Built on an EfficientNetV2-S backbone with custom classifier
+            heads and optional channel attention, the MIME framework provides a controlled setting to assess each method
+            individually and in combination. Experiments on the ISIC 2019 dataset demonstrate that sampling and loss based
+            adjustments yield moderate benefits, but generative augmentation delivers the most substantial improvements.
+            Compared to a linear baseline, accuracy increased from 82.25% to 90.08%, macro F1 increased from 60.42% to
+            82.84%, and SCC F1 improved dramatically from 11.89% to 53.18%. These results highlight the importance of
+            targeted strategies for minority class enhancement, showing that DC-GAN based augmentation can significantly
+            boost sensitivity to aggressive but underrepresented lesions while maintaining strong performance on majority
+            classes. Through a unified and reproducible protocol, MIME provides a practical foundation for developing
+            transparent, more robust, and clinically reliable dermatology AI systems.
+          </p>
+        </details>
+      </article>
+
+      <article class="paper">
+        <h3>Federated Deep Learning for Alzheimer's Disease Detection: Strong Internal Performance Does Not Survive a Change of Imaging Source</h3>
+        <p class="authors"><strong>Md. Hasibul Islam</strong>, et al.</p>
+        <p class="venue"><span class="badge">In preparation</span> Computer Vision course research; manuscript prepared for submission to a Springer Nature journal</p>
+        <p class="summary">
+          A dual-channel ConvNeXt-Small + Swin-V2-S classifier with CBAM fusion, trained centrally and with simulated
+          federated learning (FedAvg, FedProx, FedBN). It reaches 92.74% internal accuracy, but accuracy falls to
+          12–22% on 86,437 external OASIS-1-derived images. Strong same-source results did not show that the model
+          is robust across imaging sources.
+        </p>
+        <div class="pills">
+          <a href="assets/computer-vision-alzheimers.pdf" target="_blank" rel="noopener">Paper</a>
+        </div>
+        <details>
+          <summary>Abstract</summary>
+          <p>
+            Deep learning can stage Alzheimer's disease from magnetic resonance imaging, but performance on held-out images
+            from the training source may not generalize across imaging collections. We developed a dual-channel classifier
+            combining ConvNeXt-Small and Swin-V2-S representations with Convolutional Block Attention Module fusion. The
+            executed objective used soft-target cross-entropy and focal loss; a configured supervised contrastive term was
+            numerically inactive. A 6,400-image four-class training collection lacked subject identifiers and was split at
+            image level. We compared centralized training with federated averaging, federated proximal optimization and a
+            federated batch-normalization-style strategy using two simulated same-source clients. Evaluation comprised 951
+            internal images and 86,437 OASIS-1-derived external images. Internally, the batch-normalization-style model
+            achieved 92.74% accuracy, 95.13% balanced accuracy, a macro-F1 score of 0.945 and a macro area under the receiver
+            operating characteristic curve of 0.991. Externally, accuracy fell to 12.06–22.11%, macro-F1 to 0.097–0.173 and
+            macro area under the curve to 0.634–0.692. Raw source statistics differed substantially, with Kolmogorov–Smirnov
+            statistics of 0.967 and 0.997 and MMD² = 0.534. Temperature scaling increased validation expected calibration
+            error from 0.348 to 0.390, and the batch-normalization-style model produced 9,711 high-confidence external errors
+            compared with 10 internally. Strong same-source performance and simulated federated training therefore did not
+            establish cross-source robustness. Without subject identifiers, internal performance must be interpreted as an
+            image-level upper-bound estimate rather than evidence of subject-independent generalization.
+          </p>
+        </details>
+      </article>
+
+      <article class="paper">
+        <h3>ClinDiffXAI: Concept-Conditioned Diffusion for Clinically Grounded Dermoscopic Image Synthesis</h3>
+        <p class="authors"><strong>Md. Hasibul Islam</strong>, et al.</p>
+        <p class="venue"><span class="badge">Under review</span> Submitted to <em>Computer Methods and Programs in Biomedicine</em></p>
+        <p class="summary">
+          A concept-conditioned diffusion model for clinically controllable dermoscopic image synthesis. It reproduces
+          melanoma features with statistically significantly higher fidelity than class-conditioned baselines.
+        </p>
+      </article>
+    </section>
+
+    <hr>
+
+    <!-- Academic Projects (order follows the CV) -->
+    <section id="projects">
+      <h2>Academic Projects</h2>
+      <div class="project-grid">
+
+        <article class="project">
+          <h3>Eventique: Event Management System</h3>
+          <p>A web app for booking halls for events. Users sign up and sign in before booking, and admins can add, update and delete anything in the system. Database-backed and built with the MVC pattern.</p>
+          <ul class="tags tags-sm"><li>JavaScript</li><li>PHP</li><li>HTML</li><li>CSS</li></ul>
+          <div class="pills"><a href="https://github.com/hasibul-shant0/WebTech" target="_blank" rel="noopener">Code</a></div>
+        </article>
+
+        <article class="project">
+          <h3>Rural and Urban Scenes: OpenGL Project</h3>
+          <p>A computer graphics project with several rural and urban scenes, including day-night transitions, moving objects and direction changes.</p>
+          <ul class="tags tags-sm"><li>C++</li><li>OpenGL</li></ul>
+          <div class="pills"><a href="https://github.com/hasibul-shant0/Graphics" target="_blank" rel="noopener">Code</a></div>
+        </article>
+
+        <article class="project">
+          <h3>TaxiCab: Taxi Service App</h3>
+          <p>A desktop app for a taxi service. Users book taxis for rides and an admin manages the whole system.</p>
+          <ul class="tags tags-sm"><li>Java</li></ul>
+        </article>
+
+        <article class="project">
+          <h3>Netspace: ISP Management System</h3>
+          <p>A .NET desktop app for an internet service provider. Users book and upgrade packages, and admins add users, book packages for them and monitor the system.</p>
+          <ul class="tags tags-sm"><li>C#</li><li>.NET</li></ul>
+        </article>
+
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- CV / Experience -->
+    <section id="cv">
+      <h2>CV &amp; Experience</h2>
+
+      <div class="cv-block">
+        <h3>Education</h3>
+        <div class="cv-item">
+          <div><strong>B.Sc. in Computer Science &amp; Engineering</strong><br>American International University-Bangladesh · CGPA 3.75/4.00</div>
+          <span class="date">Apr 2023 – Jan 2027</span>
+        </div>
+        <div class="cv-item">
+          <div><strong>Higher Secondary Certificate (HSC)</strong><br>Madaripur Govt. College · GPA 5.00/5.00</div>
+          <span class="date">2021</span>
+        </div>
+        <div class="cv-item">
+          <div><strong>Secondary School Certificate (SSC)</strong><br>U.I Govt. High School · GPA 5.00/5.00</div>
+          <span class="date">2019</span>
+        </div>
+      </div>
+
+      <div class="cv-block">
+        <h3>Research Experience</h3>
+        <div class="cv-item">
+          <div>
+            <strong>Research Assistant</strong>, Arche Intelligence Lab
+            <ul>
+              <li>Built and evaluated custom CNN models.</li>
+              <li>Published a research paper at an international conference (TCCE 2025).</li>
+            </ul>
+          </div>
+          <span class="date">Jun 2025 – Aug 2026</span>
+        </div>
+      </div>
+
+      <div class="cv-block">
+        <h3>Awards &amp; Leadership</h3>
+        <ul>
+          <li>Dean's List Honor, Faculty of Science and Technology, AIUB</li>
+          <li>Academic Scholarship at AIUB (60% merit-based)</li>
+          <li>AIUB Research and Development Club, General Member (Dec 2023 – present)</li>
+          <li>Bangladesh Scouts (2014 – 2018)</li>
+          <li>BD Clean, General Member (2019 – 2021)</li>
+        </ul>
+      </div>
+
+      <div class="cv-block">
+        <h3>Skills</h3>
+        <p><strong>Programming:</strong> C, C++, Python, R, Java, C# &nbsp;·&nbsp; <strong>ML:</strong> PyTorch, TensorFlow &nbsp;·&nbsp; <strong>Data:</strong> NumPy, Pandas, Matplotlib, Seaborn, Plotly &nbsp;·&nbsp; <strong>Tools:</strong> Git, LaTeX</p>
+      </div>
+
+      <a href="assets/cv.pdf" target="_blank" rel="noopener" class="btn">View / Download Full CV (PDF)</a>
+    </section>
+
+  </main>
+
+  <footer class="container footer">
+    <p>&copy; 2026 Md. Hasibul Islam · Dhaka, Bangladesh</p>
+  </footer>
+
+</body>
+</html>
