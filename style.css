@@ -48,6 +48,12 @@ body {
   text-decoration: underline;
   text-underline-offset: 4px; /* Optional: adds clean spacing below the text */
 }
+.hero-text p {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto; /* Needed for Safari */
+  word-spacing: normal;
+}
 
 
 a { color: var(--link); text-decoration: none; }
