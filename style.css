@@ -23,6 +23,32 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
+/* Arranges the list items side-by-side without bullet points */
+.tags {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* Space between each tag */
+}
+
+/* Styles each interest with a soft green highlight */
+.tags li {
+  background-color: #e6f4ea; /* Soft green background */
+  color: #137333;            /* Dark green text for contrast */
+  border: 1px solid #ceead6; /* Optional subtle border */
+  padding: 6px 12px;
+  border-radius: 16px;       /* Rounded pill shape */
+  font-size: 0.9rem;
+  font-family: sans-serif;
+}
+
+.quick-links a {
+  text-decoration: underline;
+  text-underline-offset: 4px; /* Optional: adds clean spacing below the text */
+}
+
 
 a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
